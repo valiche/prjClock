@@ -12,18 +12,21 @@ public class Relogio {
         for (; hora <=24; hora++) {
             for (; min < 60; min++) {
                 for (; seg < 60; seg++){
-                    //System.out.printf("%d:%d:%d\n", hora, min, seg);
-                    //return hora + ":" + min + ":" + seg;
+                    System.out.printf("%d:%d:%d\n", hora, min, seg);
+                    //public String getTime(){return hora + ":" + min + ":" + seg;}
                 }
                     seg=0;
             }
             min=0;
         }
         hora=0;
+        min=0;
+        seg=0;
         //System.out.printf("%d:%d:%d\n", hora, min, seg);
     }
 
-    public String getHora() {
-        return hora + ":" + min + ":" + seg;
+    public void getHora() {
+        System.out.printf("%d:%d:%d\n", hora, min, seg);
     }
+
 }
